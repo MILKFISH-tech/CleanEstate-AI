@@ -5,10 +5,7 @@
 
 name = "cleanestate-ai"
 compatibility_date = "2025-01-01"
-
-# Pages 設定
-[build]
-command = "npm run build"
+pages_build_output_dir = "dist"
 
 # 環境變數 (本地開發用，正式環境在 Cloudflare Dashboard 設定)
 [vars]
