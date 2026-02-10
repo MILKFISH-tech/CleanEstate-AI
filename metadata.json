@@ -1,0 +1,5 @@
+{
+  "name": "CleanEstate AI",
+  "description": "A professional tool for real estate agents to batch remove unwanted objects from property photos using Gemini 2.5 AI.",
+  "requestFramePermissions": []
+}

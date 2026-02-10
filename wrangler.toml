@@ -1,0 +1,15 @@
+# ============================================================
+# Cloudflare Pages 設定
+# 本地開發用: npx wrangler pages dev dist
+# ============================================================
+
+name = "cleanestate-ai"
+compatibility_date = "2025-01-01"
+
+# Pages 設定
+[build]
+command = "npm run build"
+
+# 環境變數 (本地開發用，正式環境在 Cloudflare Dashboard 設定)
+[vars]
+# GEMINI_API_KEY = "" # ⚠️ 請勿在此放 API Key！到 Cloudflare Dashboard > Pages > Settings > Environment variables 設定

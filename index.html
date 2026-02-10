@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CleanEstate AI - 未來空間實驗室</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              brand: {
+                black: '#050505', // Ultra Dark
+                dark: '#0a0a0a',  
+                panel: '#121212',
+                border: '#27272a', 
+              },
+              admin: {
+                bg: '#f8fafc',      // Light Slate (Background)
+                sidebar: '#0f172a', // Slate 900
+                primary: '#3b82f6', // Corporate Blue
+                surface: '#ffffff', // White
+                text: '#334155',    // Slate 700
+              },
+              neon: {
+                blue: '#00f3ff',   // Cyber Blue
+                pink: '#ff00ff',   // Cyber Pink
+                green: '#39ff14',  // Cyber Green
+                purple: '#bc13fe', // Cyber Purple
+                orange: '#ff6b00', // Cyber Orange (NEW PRIMARY)
+              }
+            },
+            boxShadow: {
+              'neon-blue': '0 0 5px theme("colors.neon.blue"), 0 0 20px theme("colors.neon.blue")',
+              'neon-pink': '0 0 5px theme("colors.neon.pink"), 0 0 20px theme("colors.neon.pink")',
+              'neon-green': '0 0 5px theme("colors.neon.green"), 0 0 20px theme("colors.neon.green")',
+              'neon-orange': '0 0 5px theme("colors.neon.orange"), 0 0 20px theme("colors.neon.orange")',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #050505;
+        color: #e4e4e7;
+        /* Prevent bounce effect on Mac/iOS */
+        overscroll-behavior: none; 
+      }
+      
+      /* Dark Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ff6b00; /* Neon Orange hover */
+      }
+
+      /* Text Selection */
+      ::selection {
+        background: #ff6b00;
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1?deps=react@18.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1?deps=react@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased overflow-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
